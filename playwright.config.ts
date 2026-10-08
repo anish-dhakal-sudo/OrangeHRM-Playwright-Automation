@@ -23,7 +23,7 @@ export default defineConfig({
 
     baseURL: process.env.BASE_URL,
 
-    headless: false,
+    headless: !!process.env.CI,
 
     screenshot: 'only-on-failure',
 
